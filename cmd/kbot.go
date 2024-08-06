@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	TelegramToken = os.Getenv("TELEGRAM_TOKEN")
+	TelegramToken = os.Getenv("TELE_TOKEN")
 )
 
 // kbotCmd represents the kbot command
@@ -36,7 +36,7 @@ to quickly create a Cobra application.`,
 		kbot, err := telebot.NewBot(pref)
 
 		if err != nil {
-			log.Fatalf("Please check TELEGRAM_TOKEN env variable. %s", err)
+			log.Fatalf("Please check TELE_TOKEN env variable. %s", err)
 			return
 		}
 
