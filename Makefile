@@ -39,7 +39,7 @@ windows: TARGETARC=amd64
 windows: build
 windows: image
 
-image: build
+image:
 	docker build . -t ${REGISTRY}/${APP}:${VERSION}-$(TARGETARC)
 
 push:
